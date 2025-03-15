@@ -1,13 +1,13 @@
 {
   "name": "backend-server-express",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "dist/server.mjs",
   "exports": "./dist/server.mjs",
   "type": "module",
   "scripts": {
-    "dev": "npx tsx watch ./src/server.ts",
-    "build": "pkgroll --clean-dist --minify",
-    "start": "node dist/server.mjs"
+    "build": "tsc",
+  "start": "node dist/server.js",
+  "dev": "npx tsx watch ./src/server.ts"
   },
   "keywords": [],
   "author": "",
